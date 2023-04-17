@@ -48,7 +48,7 @@ Open the Main.java file
 Replace apiKey with your own SerpApi API key
 Change the search for the one you are interested in, modifying the query variable, you can also add or change the variables to modify the search parameters if you want to search by author or scientific journal.
 
-run the app
+Run the app
 The application made a request to SerpApi with the indicated parameters and displayed the result on the console.
 
 Credits
