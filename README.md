@@ -15,7 +15,7 @@ Una cuenta en SerpApiy una API key válida
 
 Uso
 Clona este repositorio
-Abre el archivo Main.java
+Abre el archivo org.basic.querys.Main.java
 Reemplaza apiKey con tu propia API key de SerpApi
 Cambia la búsqueda por la que te interese, modificando la variable query, también se pueden agregar o cambiar las variables para modificar los parámetros de búsqueda si se desea buscar por autor o revista científica. 
 
@@ -44,7 +44,7 @@ An account in SerpApi and a valid API key
 
 Use
 Clone this repository
-Open the Main.java file
+Open the org.basic.querys.Main.java file
 Replace apiKey with your own SerpApi API key
 Change the search for the one you are interested in, modifying the query variable, you can also add or change the variables to modify the search parameters if you want to search by author or scientific journal.
 
