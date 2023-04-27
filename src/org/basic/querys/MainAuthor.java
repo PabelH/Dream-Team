@@ -12,18 +12,27 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class MainAuthor {
     public static void main(String[] args) throws IOException, InterruptedException, URISyntaxException {
-         final String DB_URL = "jdbc:mysql://localhost:3306/authorsdata";
-         final String USER = "root";
-         final String PASS = "";
+        Scanner scanner = new Scanner(System.in);
         HttpClient client = HttpClient.newHttpClient();
+
+        final String DB_URL = "jdbc:mysql://localhost:3306/authorsdata";
+        final String USER = "root";
+        final String PASS = "";
+
         String url = "https://serpapi.com/search.json?engine=google_scholar_author";
         String apiKey = "abc123"; //your apiKey Ex: 123abc
-        String author_id = "qc6CJjYAAAAJ"; //Albert Einstein
-        String hl = "en";
-        int numResults = 10;
+        int numResults = 5;
+
+        System.out.print("Enter author ID: ");
+        String author_id = scanner.nextLine();
+        System.out.print("Enter language (e.g. en, es, fr): ");
+        String hl = scanner.nextLine();
+
+
 
         // https://serpapi.com/search.json?engine=google_scholar_author&author_id=LSsXyncAAAAJ&hl=en&api_key=123abc
         String requestUrl = url + "&author_id=" + author_id + "&hl=" + hl + "&num=" + numResults + "&api_key=" + apiKey;
